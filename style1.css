@@ -1,0 +1,19 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    display: block;
+    text-align: center;
+}
+#myButton{
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: #ffffff;
+    background-color: rgb(6, 77, 136);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+#myButton:hover{
+    background-color:rgb(40, 40, 63);
+}
