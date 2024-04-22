@@ -29,7 +29,20 @@ const fruits = [{name:"apple",color:"red",calories:100},
     // filter
 
     const yellowfruits = fruits.filter(fruit => fruit.color === "yellow");
+    const calfruits = fruits.filter(fruit => fruit.calories >79);
+    const lowcalfruits = fruits.filter(fruit => fruit.calories < 90);
     console.log(yellowfruits);
+
+    console.log(calfruits);
+    console.log(lowcalfruits);
+
+    // reduce
+
+    const maxfruits = fruits.reduce( (max,fruit) => fruit.calories > max.calories ? fruit : max);
+    console.log(maxfruits);
+
+    const minfruits = fruits.reduce( (min,fruit) => fruit.calories < min.calories ? fruit : min);
+    console.log(minfruits);
 
 
 
